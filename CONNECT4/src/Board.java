@@ -20,11 +20,11 @@ public class Board {
 		turnNum = 0;
 	}
 	
-	public boolean redWin() {
-		return false;
-	}
-	
-	public boolean blackWin() {
+	public boolean findWin(int i, int j) {
+		int color = array[i][j];
+//		for (int k = 0; k < 4; k++) {
+//			if (i + k - 4)
+//		}
 		return false;
 	}
 	
