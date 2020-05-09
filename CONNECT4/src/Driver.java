@@ -7,5 +7,6 @@ public class Driver {
 		C4.printBoard();
 		C4.play(0);
 		C4.printBoard();
+		System.out.println("Will wins");
 	}
 }
