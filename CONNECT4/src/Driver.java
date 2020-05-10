@@ -5,8 +5,25 @@ public class Driver {
 		C4.printBoard();
 		C4.play(0);
 		C4.printBoard();
-		C4.play(0);
+		C4.play(1);
 		C4.printBoard();
-		System.out.println("Will wins");
+		C4.play(1);
+		C4.printBoard();
+		C4.play(2);
+		C4.printBoard();
+		C4.play(3);
+		C4.printBoard();
+		C4.play(2);
+		C4.printBoard();
+		C4.play(2);
+		C4.printBoard();
+		C4.play(3);
+		C4.printBoard();
+		C4.play(3);
+		C4.printBoard();
+		C4.play(4);
+		C4.printBoard();
+		C4.play(3);
+		C4.printBoard();
 	}
 }
