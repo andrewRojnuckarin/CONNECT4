@@ -77,6 +77,7 @@ public class Board {
 				array[i][col] = turn;
 				loc = i;
 				i = -1;
+				
 			}
 		}
 		if (loc != -1 && findWin(loc, col)) {
@@ -113,5 +114,9 @@ public class Board {
 
 	public int getBestMove() {
 		return -1;
+	}
+	
+	public int[][] getArray() {
+		return array;
 	}
 }
