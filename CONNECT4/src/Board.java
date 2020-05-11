@@ -1,4 +1,5 @@
-
+//Andrew Rojnuckarin
+//William Baron
 public class Board {
 
 	private static final int RED = 1;
@@ -70,21 +71,25 @@ public class Board {
 		return win;
 	}
 
-	public void play(int col) {
+	public String play(int col) {
 		int loc = -1;
 		for (int i = array.length - 1; i > -1; i--) {
 			if (array[i][col] == EMPTY) {
 				array[i][col] = turn;
 				loc = i;
 				i = -1;
-				
 			}
 		}
 		if (loc != -1 && findWin(loc, col)) {
-			System.out.println("WIN");
+			if (turn == RED) {
+				return "Red";
+			} else if (turn == BLACK) {
+				return "Black";
+			}
 		}
 		turn = turn * -1;
 		turnNum++;
+		return null;
 	}
 
 	public void printBoard() {
@@ -115,7 +120,7 @@ public class Board {
 	public int getBestMove() {
 		return -1;
 	}
-	
+
 	public int[][] getArray() {
 		return array;
 	}
